@@ -1,0 +1,16 @@
+<html>
+<body>
+<script>
+  function Rectangle(){
+ this.l = 10;
+ this.w = 6;
+ this.area = 0;
+ setTimeout(() => {
+     this.area = 2 * (this.l * this.w);
+     alert(this.area);
+  }, 100);
+  }
+</script>
+<button onclick="Rectangle(5, 4)">Perimeter of a Rectangle</button>
+</body>
+</html>

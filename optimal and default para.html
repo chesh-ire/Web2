@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+   <h2>Declaring optional function parameters by passing Default values.</h2>
+   <h4>Result we get when we call function with 4 parameters:</h4>
+   <p id="resultDiv1"></p>
+   <h4>Result we get when we call function with 2 parameters:</h4>
+   <p id="resultDiv2"> </p>
+   <script type="text/javascript">
+      let resultDiv1 = document.getElementById("resultDiv1");
+      let resultDiv2 = document.getElementById("resultDiv2");
+      function optionalParameter(contentdiv, num1, num2 = 20, num3 = 10) {
+         contentdiv.innerHTML = " The value of <i> num2 </i> is " + num2 + ". The value of <i> num3 </i> is " + num3;
+      }
+      optionalParameter(resultDiv1, 10, 1000, 4000);
+      optionalParameter(resultDiv2, 10);
+   </script>
+</body>  
+</html>
+
+ 
+ <html>
+<body>
+
+<p>Setting a default value to a function parameter (y = 2).</p>
+<p id="demo"></p>
+
+<script>
+function myFunction(x, y) {
+  if (y === undefined) {
+    y = 2;
+  }  
+  return x * y;
+}
+document.getElementById("demo").innerHTML = myFunction(4);
+</script>
+</body>
+</html> 
